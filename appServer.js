@@ -13,13 +13,13 @@ solan = 0;
 
 app = express();
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use(sessions({
     resave: true, 
     saveUninitialized: true, 
     secret: '12lj!3!je192Rr', 
-    cookie: { maxAge: 60000 }}));
+    cookie: { maxAge: 999999999 }}));
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
