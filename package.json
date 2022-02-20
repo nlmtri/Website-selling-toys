@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main":"appServer.js",
   "keywords": [],
-  "author": "NNTu",
   "license": "ISC",
   "scripts": {
     "start": "node appServer.js"
