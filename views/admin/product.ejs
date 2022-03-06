@@ -1,0 +1,25 @@
+<h3>Products management</h3>
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% product.forEach((entry) => { %>
+            <tr>
+              <td><%= entry.id %></td>
+              <td><%= entry.name %></td>
+              <td><%= entry.price %></td>
+              <td><a href="/admin/product?id=<%= entry.id %>" class="btn btn-info">View</a></td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+    </div>
+</div>
