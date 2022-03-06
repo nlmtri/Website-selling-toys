@@ -1,7 +1,7 @@
 {
   "name": "ATN Toys",
   "version": "1.0.0",
-  "main":"appServer.js",
+  "main": "appServer.js",
   "keywords": [],
   "license": "ISC",
   "scripts": {
