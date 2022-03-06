@@ -1,0 +1,47 @@
+  <h3>Order management</h3>
+  <div class="container">
+    <form method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label>Full name</label>
+        <input name="name" class="form-control" value="<%= order.name %>" >
+      </div>
+      <div class="form-group">
+        <label>Mail</label>
+        <input name="mail" class="form-control" value="<%= order.email %>" >
+      </div>
+      <div class="form-group">
+        <label>Address</label>
+        <input name="address" class="form-control" value="<%= order.address %>" >
+      </div>
+      <div class="form-group">
+        <label>Phone</label>
+        <input name="phone" class="form-control" value="<%= order.phone %>" >
+      </div>
+      <div class="form-group">
+        <label>Total</label>
+        <input name="total" type="number" step="0.01" class="form-control" value="<%= order.total %>" >
+      </div>
+    </form>
+  </div>
+  <div class="container">
+    <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% orderdetail.forEach((entry) => { %>
+                <tr>
+                  <td><%= entry.name %></td>
+                  <td><%= entry.price %></td>
+                  <td>1</td>
+                </tr>
+                <% }) %>
+              </tbody>
+            </table>
+        </div>
+    </div>

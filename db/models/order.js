@@ -10,6 +10,13 @@ var orderSchema = mongoose.Schema({
     name: {
         type: String,
     },
+    phone: {
+        type: String,
+    },
+    total: {
+        type: Number,
+        default: 0
+    },
     uid: {
         type: String,
     }

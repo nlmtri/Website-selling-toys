@@ -1,9 +1,13 @@
 var mongoose = require('mongoose');
 
-var productSchema = mongoose.Schema({
+var orderdetailSchema = mongoose.Schema({
     name: {
         type: String,
         default: 'No Name'
+    },
+    type: {
+        type: String,
+        default: 'No Type'
     },
     price: {
         type: Number,
@@ -12,7 +16,10 @@ var productSchema = mongoose.Schema({
     image: {
         type: String,
         default: 'noimg.jpg'
+    },
+    id_order: {
+        type: String
     }
 });
 
-module.exports = mongoose.model('product', productSchema, 'product');
+module.exports = mongoose.model('orderdetail', orderdetailSchema, 'orderdetail');
